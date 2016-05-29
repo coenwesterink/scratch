@@ -187,26 +187,23 @@ footer {
 }
 
 @media (max-width: 1000px) {
-    .video {
-      text-align: center;
-    }
-
-    .video video {
-      width: 620px;
-      height: 440px;
-      display: flex;
-      justify-content: flex-start;
-      align-items: left;
-      text-align: left;
-      margin: 5px auto;
-    }
-    
-    .video li {
-      display: block;
-      list-style-type: none;
-    }
-
-    .video p {
-      margin: 5px auto;
-    }
+  .video {
+    text-align: center;
+  }
+  .video video {
+    width: 620px;
+    height: 440px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    text-align: left;
+    margin: 5px auto;
+  }
+  .video li {
+    display: block;
+    list-style-type: none;
+  }
+  .video p {
+    margin: 5px auto;
+  }
 }

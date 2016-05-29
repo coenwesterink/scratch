@@ -166,6 +166,22 @@ nav a li:last-child a {
   padding: 10px;
 }
 
+@media (max-width: 480px) {
+  .video video {
+    width: auto;
+    height: 260px;
+  }
+  .video img {
+    width: auto;
+    height: 260px;
+  }
+}
+
 .nav {
   width: 180px;
+}
+
+.video video {
+  width: 340px;
+  height: 260px;
 }

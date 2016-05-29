@@ -35,7 +35,6 @@ nav a li:last-child a {
 }
 
 .nav {
-  position: fixed;
   margin-top: 40px;
   width: 240px;
   height: 100vh;
@@ -165,4 +164,15 @@ nav a li:last-child a {
   background: rgba(0, 0, 0, 0.7);
   letter-spacing: -1px;
   padding: 10px;
+}
+
+@media (max-width: 480px) {
+  .video video {
+    width: auto;
+    height: 260px;
+  }
+  .video img {
+    width: auto;
+    height: 260px;
+  }
 }
