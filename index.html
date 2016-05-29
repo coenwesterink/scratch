@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" media='screen and (min-width: 721px)' href="css/style.css">
+        <link rel="stylesheet" type="text/css" media='screen and (min-width: 361px) and (max-width: 720px)' href="css/style720.css" >
+        <link rel="stylesheet" type="text/css" media='screen and (min-width: 241px) and (max-width: 360px)' href="css/style360.css" >
+        <link rel="stylesheet" type="text/css" media='screen and (min-width: 0px) and (max-width: 240px)' href="css/style240.css" >
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            $(".image").hover(function(){
+                $(this).toggleClass("hoi");
+            });
+            $(".image").mouseout(function(){
+                $(this).toggleClass("doei");
+        });
+        });
+        </script>
+    </head>
+  <body>
+    <input type="checkbox" id="menuToggle">
+    <label for="menuToggle" class="menu-icon">&#9776;</label>
+    <nav class="nav">
+       <ul>
+         <li><a href="#">Home</a></li>
+         <li><a href="#">About Scratch</a></li>
+         <li><a href="#">Projects we Like</a></li>
+      </ul>
+     </nav>
+    <div class="col-md-12">
+      <div class="intro">
+        <h1>Scratch</h1>
+        <p>Learn programming, program to learn</p>
+        <a href="#" class="button">Learn more</a>
+      </div>
+    </div>
+    <div class="hrAbout">
+    <h1>About scratch</h1>
+    <hr>
+  </div>
+    <div class="video">
+      <ul>
+        <li>
+      <p>With Scratch, you can program your own interactive stories, games, and animations - and share your creations with others in the online community.
+Scratch helps young people learn to think creatively, reason systematically, and work collaboratively - essential skills for life in the 21st century.</p>
+      <video controls>
+        <source src="images/scratch_video.mp4" type="video/mp4">
+      </video>
+    </li>
+    <li>
+      <p>Write nothing, do more</p>
+      <img src="http://66.media.tumblr.com/7cd641e5f40b8d8f5475f1f99877293d/tumblr_n0mp62S1L51t8ulcmo1_500.gif">
+    </li>
+    </div>
+    <div class="hr">
+    <h1>Projects we like</h1>
+    </div>
+    <hr>
+    <div class="grid">
+      <ul>
+        <li>
+          <h1 class="image-caption">Everything at <span>once AMV</span></h1>
+          <img class="image" src="//cdn.scratch.mit.edu/static/site/projects/thumbnails/10845/9709.png"/>
+        </li>
+        <li>
+          <h1 class="image-caption">Rhea's <span>garden</span></h1>
+          <img class="image" src="//cdn.scratch.mit.edu/static/site/projects/thumbnails/10383/6675.png"/>
+        </li>
+        <li>
+          <h1 class="image-caption">Force<span>training</span></h1>
+          <img class="image" src="//cdn.scratch.mit.edu/static/site/projects/thumbnails/10202/1927.png"/>
+        </li>
+        <li>
+          <h1 class="image-caption">When can I <span>see you again</span></h1>
+          <img class="image" src="//cdn.scratch.mit.edu/static/site/projects/thumbnails/11049/2947.png"/>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
+</body>
+        <footer>
+        </footer>
+      </body>
+    </html>
+  </body>
+</html>

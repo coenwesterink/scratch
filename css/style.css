@@ -1,0 +1,212 @@
+body {
+  margin: 0 auto;
+  font-family: sans-serif;
+  list-style-type: none;
+}
+
+nav {
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  height: 50px;
+  opacity: .9;
+  text-align: right;
+}
+
+nav li {
+  list-style-type: none;
+  display: inline-block;
+  width: 20%;
+}
+
+nav a {
+  text-decoration: none;
+  color: grey;
+}
+
+nav a:hover {
+  color: black;
+}
+
+.col-md-12 {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://scratch.mit.edu/images/scratch-og.png");
+  background-size: cover;
+  background-repeat: none;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-md-12 a {
+  text-decoration: none;
+  color: black;
+  background: lightblue;
+  font-size: 24px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.col-md-12 a:hover {
+  background-color: #76bdd5;
+}
+
+.col-md-12 a:active {
+  background-color: #4fabc9;
+}
+
+.hrAbout {
+  text-align: center;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+}
+
+.video li {
+  list-style-type: none;
+  display: inline-flex;
+}
+
+.video p {
+  margin: 50px;
+  font-size: 25px;
+}
+
+.video video {
+  width: 620px;
+  height: 440px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: left;
+  text-align: left;
+}
+
+.video img {
+  width: 620px;
+  height: 540px;
+  margin: 5px;
+}
+
+.image-caption {
+  position: absolute;
+  z-index: 5;
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  letter-spacing: -1px;
+  padding: 10px;
+}
+
+.hr {
+  text-align: center;
+}
+
+.grid {
+  background-color: #eee;
+  display: flex;
+  justify-conent: center;
+  align-items: center;
+  text-align: center;
+}
+
+.grid li {
+  display: inline-flex;
+  list-style-type: none;
+  flex-direction: column;
+  margin: 15px;
+}
+
+.grid img {
+  position: relative;
+}
+
+.hoi {
+  box-shadow: 0px 0px 20px black;
+  padding: 10px;
+  transition: all .3s ease-in-out;
+}
+
+.doei {
+  box-shadow: 0px 0px 0px black;
+  padding: 0px;
+  transition: all .3s ease-in-out;
+}
+
+.image-caption {
+  position: absolute;
+  z-index: 5;
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  letter-spacing: -1px;
+  padding: 10px;
+}
+
+footer {
+  background-color: #eee;
+  height: 25vh;
+}
+
+@-webkit-keyframes box-shadow-move {}0% {
+  -webkit-box-shadow: 0px 0px 0px black;
+}
+
+50% {
+  -webkit-box-shadow: 2px 2px 25px black;
+}
+
+100% {
+  -webkit-box-shadow: 5px 5px 50px black;
+}
+
+@keyframes box-shadow-move {}0% {
+  box-shadow: 0px 0px 0px black;
+}
+
+50% {
+  box-shadow: 2px 2px 25px black;
+}
+
+100% {
+  box-shadow: 5px 5px 50px black;
+}
+
+@media (min-width: 721px) {
+  #menuToggle {
+    display: none;
+  }
+  .menu-icon {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+    .video {
+      text-align: center;
+    }
+
+    .video video {
+      width: 620px;
+      height: 440px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: left;
+      text-align: left;
+      margin: 5px auto;
+    }
+    
+    .video li {
+      display: block;
+      list-style-type: none;
+    }
+
+    .video p {
+      margin: 5px auto;
+    }
+}

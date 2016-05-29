@@ -1,0 +1,168 @@
+body {
+  margin: 0 auto;
+  font-family: sans-serif;
+  list-style-type: none;
+}
+
+nav li {
+  list-style-type: none;
+  display: block;
+  width: 100%;
+  color: #ffc14d;
+}
+
+nav {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  color: #ffc14d;
+  padding: 15px 0;
+  border-bottom: 1px solid orange;
+}
+
+nav a:hover {
+  color: #ffaf1a;
+}
+
+nav a li:last-child a {
+  border-bottom: none;
+}
+
+.nav {
+  position: fixed;
+  margin-top: 40px;
+  width: 240px;
+  height: 100vh;
+  position: absolute;
+  background: white;
+  color: #ffc14d;
+  left: -240px;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+}
+
+.menu-icon {
+  padding: 10px 20px;
+  background-color: white;
+  color: #ffaf1a;
+  font-size: 32px;
+  cursor: pointer;
+  float: right;
+  margin: 1px 1px 0 0;
+  border-radius: 5px;
+}
+
+#menuToggle {
+  display: none;
+}
+
+#menuToggle:checked ~ .nav {
+  position: absolute;
+  left: 0;
+}
+
+.col-md-12 {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Scratchcat.svg/2000px-Scratchcat.svg.png");
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: none;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-md-12 a {
+  background-color: #ffc14d;
+  color: black;
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.col-md-12 a:hover {
+  background-color: #ffaf1a;
+}
+
+.col-md-12 a:active {
+  background-color: #e69500;
+}
+
+.hrAbout {
+  text-align: center;
+}
+
+.hr {
+  text-align: center;
+}
+
+.video {
+  text-align: center;
+}
+
+.video li {
+  display: block;
+  list-style-type: none;
+}
+
+.video video {
+  width: 540px;
+  height: 320px;
+}
+
+.video p {
+  margin: 5px auto;
+}
+
+.grid {
+  display: flex;
+  justify-conent: center;
+  align-items: center;
+  text-align: center;
+}
+
+.grid li {
+  display: inline-flex;
+  list-style-type: none;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.grid img {
+  position: relative;
+}
+
+.hoi {
+  box-shadow: 0px 0px 20px black;
+  padding: 10px;
+  transition: all .3s ease-in-out;
+}
+
+.doei {
+  box-shadow: 0px 0px 0px black;
+  padding: 0px;
+  transition: all .3s ease-in-out;
+}
+
+.image-caption {
+  position: absolute;
+  z-index: 5;
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  letter-spacing: -1px;
+  padding: 10px;
+}
