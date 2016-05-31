@@ -6,7 +6,6 @@ body {
 
 nav {
   z-index: 1000;
-  position: fixed;
   width: 100%;
   background-color: white;
   height: 50px;
@@ -126,16 +125,14 @@ nav a:hover {
   position: relative;
 }
 
-.hoi {
-  box-shadow: 0px 0px 20px black;
-  padding: 10px;
-  transition: all .3s ease-in-out;
+.image {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease-in-out;
 }
 
-.doei {
-  box-shadow: 0px 0px 0px black;
-  padding: 0px;
-  transition: all .3s ease-in-out;
+/* Transition to a bigger shadow on hover */
+.image:hover {
+  box-shadow: 0 0px 25px rgba(0, 0, 0, 0.3);
 }
 
 .image-caption {
@@ -150,39 +147,6 @@ nav a:hover {
 footer {
   background-color: #eee;
   height: 25vh;
-}
-
-@-webkit-keyframes box-shadow-move {}0% {
-  -webkit-box-shadow: 0px 0px 0px black;
-}
-
-50% {
-  -webkit-box-shadow: 2px 2px 25px black;
-}
-
-100% {
-  -webkit-box-shadow: 5px 5px 50px black;
-}
-
-@keyframes box-shadow-move {}0% {
-  box-shadow: 0px 0px 0px black;
-}
-
-50% {
-  box-shadow: 2px 2px 25px black;
-}
-
-100% {
-  box-shadow: 5px 5px 50px black;
-}
-
-@media (min-width: 721px) {
-  #menuToggle {
-    display: none;
-  }
-  .menu-icon {
-    display: none;
-  }
 }
 
 @media (max-width: 1000px) {
