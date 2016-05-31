@@ -148,6 +148,15 @@ footer {
   height: 25vh;
 }
 
+@media (min-width: 721px) {
+  #menuToggle {
+    display: none;
+  }
+  .menu-icon {
+    display: none;
+  }
+}
+
 @media (max-width: 1000px) {
   .video {
     text-align: center;
